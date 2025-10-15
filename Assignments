@@ -1,0 +1,292 @@
+// question 1
+namespace assignment01 
+{
+    internal class Program
+    {
+        public static void Main(string[] args)
+        {
+            Console.WriteLine("the even numbers between 1 & 10 are:");
+            for (int i = 1; i < 10; i++)
+            {
+                if (i % 2 == 0)
+                {
+                    Console.WriteLine(i);
+                }
+            }
+
+        }
+
+    }
+
+}
+
+--------------------------------------------------------------
+
+// question 2 
+
+namespace assignment01
+{
+    internal class Program
+    {
+        public static void Main()
+        {
+            Console.WriteLine("the first 15 fibonacci numbers are:");
+            int a = 0, b = 1;
+            for (int i = 0; i < 15; i++)
+            {
+
+                Console.WriteLine(a);
+                int sth = a;
+                a = b;
+                b = sth + b;
+
+            }
+
+        }
+
+    }
+
+}
+
+
+-----------------------------------------------------
+
+// question 3
+namespace assignment01
+{
+    internal class Program
+    {
+        public static void Main()
+        {
+            Console.WriteLine("the first 10 powers of 2 numbers are:");
+            for (int i = 0; i < 10; i++)
+            {
+                
+                int powers = (int)Math.Pow(2, i);
+                Console.WriteLine(powers);
+
+            }
+
+        }
+
+    }
+
+}
+
+
+
+-------------------------------------------
+
+// question 4
+namespace assignment01
+{
+    internal class Program
+    {
+        public static void Main()
+        {
+            int[] numbers = { 34, 48, 284, 27, 38, 46, 20 };
+            int maxnum = numbers[0];
+
+            for (int i = 1; i < numbers.Length; i++) {
+                if (numbers[i] > maxnum)
+                {
+                    maxnum = numbers[i];
+                }
+            }
+            Console.WriteLine(maxnum);
+        }
+    }
+}
+
+
+------------------------------------------
+
+// question 5 
+
+namespace assignment01
+{
+    internal class Program
+    {
+        public static void Main()
+        {
+            int stars = 5;
+            for (int i = 0; i < stars; i++)
+            {
+                for (int j = 0; j < stars; j++) 
+                {
+                    Console.Write(" * " );
+                    
+                }
+
+                Console.WriteLine("  ");
+            }
+            
+        }
+            
+    }
+}
+
+
+
+
+------------------------------------------
+
+// question 6
+
+
+
+
+
+
+------------------------------------------
+
+// question 7
+
+
+
+
+
+
+
+
+
+------------------------------------------
+
+// question 8
+
+namespace assignment01
+{
+    internal class Program
+    {
+        public static void Main()
+        {
+            Console.Write("enter string:");
+            string input = Console.ReadLine();
+
+            string reversed = reversedinput(input);
+
+            Console.WriteLine(input);
+            Console.WriteLine(reversed);
+            
+        }
+            static string reversedinput(string str)
+        {
+            string output = "";
+            for (int i = str.Length -1 ; i >= 0; i--) { // length - 1 is last index and --1 moves backword through the string
+                output += str[i]; // accesses the index i charcater
+            }
+            return output;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+------------------------------------------
+
+// question 9 
+
+
+namespace assignment01
+{
+    internal class Program
+    {
+        public static void Main()
+        {
+            Console.Write("enter string:");
+            string input = Console.ReadLine();
+
+            string numvowels = vowelsnum(input);
+
+            Console.WriteLine($"vowels count in {input} is : {vowelsnum}");            
+        }
+            static string numvowels(string str)
+        {
+            int output = 0;
+            string vowels = "aeiou";
+
+//////// idk how to finish this
+
+        }
+    }
+}
+
+
+
+
+
+------------------------------------------
+
+// question 10
+
+
+namespace assignment01
+{
+    internal class Program
+    {
+        public static void Main()
+        {
+            int sum = 0;
+
+            for (int i = 2; i < 101; i += 2)
+            {
+                sum += i;
+            }
+            Console.WriteLine("the sum of all even numbers from 2 to 100 is ");
+            Console.WriteLine(sum);
+
+        }
+    }
+}
+
+
+
+
+
+
+
+
+------------------------------------------
+
+// question 11
+
+
+
+
+
+
+
+
+
+
+
+------------------------------------------
+
+// question 12  INCOMPLETE
+
+namespace assignment01
+{
+    internal class Program
+    {
+        public static void Main()
+        {
+            int[] numbers = { 34, 48, 284, 27, 38, 46, 20 };
+            sorted(numbers);
+        }
+        static void sorted(int[] thenums);
+        int n = thenums.Length;
+        for (int i = 0; i < n -1 ; i++)
+            { 
+
+            }
+            Console.WriteLine("");
+        }
+    }
+}
+
+
