@@ -134,6 +134,50 @@ namespace assignment01
 // question 6
 
 
+namespace assignment0
+{
+    public class Solution
+    {
+
+        static void Main()
+        {
+            Console.Write("enter number:");
+            int num = int.Parse(Console.ReadLine());
+            if (isprime(num)) {
+                Console.WriteLine($"{num} is a prime number");
+            }
+            else
+            {
+                Console.WriteLine($"{num} is not a prime number.");
+            }
+            static bool isprime(int n)
+            {
+                if (n < 2)
+                {
+                    return false;
+                }
+                if (n == 2) { return true; }
+                if (n % 2 == 0)
+                {
+                    return false;
+                }
+                for (int i = 3; i * i <=n ; i += 2)
+                {
+                    if (n % i == 0)
+                    {
+                        return false;
+                    }
+                }
+                return true;
+            }
+        }
+
+
+    
+        }
+    }
+
+
 
 
 
@@ -142,7 +186,34 @@ namespace assignment01
 
 // question 7
 
+namespace assignment0
+{
+    public class Solution
+    {
+        static void main()
+        {
+            Console.Write("Enter a number: ");
+            int num = int.Parse(Console.ReadLine());
 
+            int sum = SumOfDigits(num);
+
+            Console.WriteLine($"Sum of digits of {num} is: {sum}");
+        }
+        static int SumOfDigits(int n)
+        {
+            int sum = 0;
+            n = Math.Abs(n);
+
+            while (n > 0)
+            {
+                sum += n % 10;
+                n /= 10;
+            }
+
+            return sum;
+        }
+    }
+}
 
 
 
